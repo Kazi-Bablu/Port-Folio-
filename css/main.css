@@ -1,0 +1,733 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+
+
+
+   ========================================================================== */
+
+.slidermenu{
+    
+}
+.slidermenu h3 {
+	font-size: 60px;
+	font-family: Roboto;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	padding: 7px 3px;
+}
+.slidermenu button {
+	background: none;
+	color: #fff;
+	font-size: 18px;
+	font-family: Roboto;
+	border: 2px solid #fff;
+}
+.navmenu{}
+.navmenu img {
+	padding: 5px;
+	padding-left: 180px;
+}
+.aboutmenu{
+    background: #fff;
+}
+.aboutmenu h2 {
+	font-family: Roboto;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 28px 63px;
+	margin: 0 auto;
+    color: #566366;
+}
+.aboutmenu p {
+	font-family: Roboto;
+	font-size: 18px;
+	padding: 8px 17px;
+	color: #919191;
+}
+.imagemenu {
+	padding: 13px 1px;
+}
+.backcolor {
+	background-color: #f2f2f1;
+}
+.imagemenu img {
+	padding: 34px 0px;
+}
+.imagemenu h3 {
+    color: #566366;
+	text-transform: uppercase;
+	font-family: Roboto;
+	font-size: 30px;
+	padding: 19px 79px;
+}
+.imagemenu p {
+	color: #919191;
+	font-size: 18px;
+	font-family: Roboto;
+	padding: 0px 68px;
+}
+.fourbtnarea img {
+	padding: 19px 72px;
+}
+.fourtitle li{
+    list-style: none;
+}
+.fourtitle h4 {
+	font-size: 22px;
+	font-family: Roboto;
+	color: #566366;
+	padding: 0px 129px;
+	margin-top: -52px;
+	float: left;
+}
+.fourtitle p {
+	font-size: 15px;
+	font-family: Roboto;
+	color: #566366;
+	padding: 0px 130px;
+	margin-top: -10px;
+	float: left;
+}
+
+.skillmenu {
+	padding: 33px 0px;
+}
+.skillmenu h4 {
+	font-size: 30pt;
+	font-family: Roboto;
+	color: #566366;
+	padding: 7px 0px;
+	text-transform: uppercase;
+}
+.skillmenu p {
+	font-size: 18px;
+	font-family: Roboto;
+	color: #566366;
+	padding: 7px 0px;
+}
+.skillmenu button {
+	color: #2ecc71;
+	border: 1px solid #2ecc71;
+}
+.pograssmenu{
+    
+}
+.pograssmenu h4 {
+	font-family: Roboto;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.resumesection {
+	padding: 10px 0px;
+    background: #f2f2f1;
+}
+.resumemenu {
+	
+}
+.resumemenu h2 {
+	text-align: center;
+	color: #8a9193;
+	font-size: 30px;
+	font-family: Roboto;
+	text-transform: uppercase;
+}
+.resumemenu p {
+	color: #aeaeae;
+	font-size: 18px;
+	font-family: Roboto;
+	padding: 16px 5px;
+}
+.resumemenu button {
+	padding: 12px 28px;
+}
+.myeducation {
+	padding: 27px 0px;
+}
+.educationmenu h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: roboto;
+	color: #566366;
+	padding: 10px 0;
+}
+.educationmenu p {
+	font-size: 17px;
+	font-family: roboto;
+	color: #919191;
+	padding: 6px 0;
+}
+.edudetails {
+	padding: 70px 0;
+}
+.edudetails h1 {
+	color: #8f9698;
+	font-size: 22px;
+	font-family: roboto;
+}
+.edudetails h4{
+	font-size: 18px;
+	font-family: roboto;
+	color: #919191;
+}
+.edudetails h5 {
+	border: 1px solid #2ecc71;
+	width: 14%;
+	background: #2ecc71;
+	color: #fff;
+	padding: 7px 7px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+.edudetails p {
+	border-top: 1px solid #919191;
+	color: #919191;
+	font-size: 15px;
+	padding: 20px 3px;
+}
+.workmenu {
+	border-top: 1px solid #cccccc;
+	padding: 33px 2px;
+}
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px 0px 0px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #2ecc71;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #2ecc71;
+}
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+  right: -520%;
+  margin-right: -10px;
+}
+.tastemonialsection .carousel-control.right {
+  right: -78px;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+      margin-top: 30px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+.tastemonialsection {
+	background: #f2f2f1;
+	padding: 24px 0px;
+}
+.tastemonialsection p {
+	color: #919191;
+	font-size: 18px;
+	font-family: roboto;
+}
+.tastemonialsection small{
+    color: #566366;
+	font-size: 15px;
+	font-family: roboto;
+}
+.portmenu{}
+.portmenu p{
+    color: #b2b2b2;
+	font-size:18px;
+	text-align:center;
+}
+.portmenu h2 {
+	color: #566366;
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 31px 0px;
+}
+.col-big{
+    position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width:20%;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	background-color: rgba(75,75,75,0.7);
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	padding: 56px 14px;
+}
+.hovereffect:hover .overlay {
+  background-color: rgba(48, 152, 157, 0.4);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  margin:0px;
+}
+
+.hovereffect p.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  margin: 7px;
+}
+
+.hovereffect:hover p.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect p.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.imgpro {
+	padding: 38px 5px;
+}
+.imgpro img{
+    padding: 0px 0px;
+}
+.imgsec{
+    
+}
+.imagesection{
+    background: #252e30;
+}
+.contactmenu {
+	padding: 72px 97px;
+}
+.contactmenu h3 {
+	font-size: 35px;
+	color: #fff;
+	font-family: roboto;
+}
+.contactmenu p {
+	color: #919191;
+	font-size: 14px;
+	font-family: roboto;
+}
+.contactmenu h5{
+    color: #fff;
+	font-size: 14px;
+	font-family: roboto;
+}
+.contactmenu span{
+    color: #fff;
+}
+.formmenu {
+	padding: 45px 10px;
+}
+.footersec{
+   background:; 
+}
+.footmenu {
+	padding: 12px 0px;
+    background: #191f21;
+}
+.footmenu p {
+	color: #4b5456;
+	font-weight: bold;
+	font-family: roboto;
+	font-size: 24px;
+}
+.footmenu i {
+	font-size: 41px;
+	padding: 21px;
+	border-radius: 35%;
+	background: #4b5456;
+	color: #191f21;
+}
+.footmenu i:hover{
+    background: #fff;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
